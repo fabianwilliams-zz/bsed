@@ -33,7 +33,7 @@ namespace app
         {
 			// Database connection string.
 			// Make sure to update the Password value below from "your_password" to your actual password.
-			var connection = @"Server=db;Database=master;User=sa;Password=P@ssword1!;";
+			var connection = @"Server=db;Database=FabsEvals;User=sa;Password=P@ssword1!;";
 
 			// This line uses 'UseSqlServer' in the 'options' parameter
 			// with the connection string defined above.
