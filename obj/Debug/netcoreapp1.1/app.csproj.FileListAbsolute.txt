@@ -1,0 +1,10 @@
+/Users/fabs/fabsdockerworld/bravosed/bin/Debug/netcoreapp1.1/app.deps.json
+/Users/fabs/fabsdockerworld/bravosed/bin/Debug/netcoreapp1.1/app.runtimeconfig.json
+/Users/fabs/fabsdockerworld/bravosed/bin/Debug/netcoreapp1.1/app.runtimeconfig.dev.json
+/Users/fabs/fabsdockerworld/bravosed/bin/Debug/netcoreapp1.1/app.dll
+/Users/fabs/fabsdockerworld/bravosed/bin/Debug/netcoreapp1.1/app.pdb
+/Users/fabs/fabsdockerworld/bravosed/obj/Debug/netcoreapp1.1/app.csprojResolveAssemblyReference.cache
+/Users/fabs/fabsdockerworld/bravosed/obj/Debug/netcoreapp1.1/app.csproj.CoreCompileInputs.cache
+/Users/fabs/fabsdockerworld/bravosed/obj/Debug/netcoreapp1.1/app.AssemblyInfo.cs
+/Users/fabs/fabsdockerworld/bravosed/obj/Debug/netcoreapp1.1/app.dll
+/Users/fabs/fabsdockerworld/bravosed/obj/Debug/netcoreapp1.1/app.pdb

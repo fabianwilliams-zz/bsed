@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{83A15213-2A89-44C0-A308-7DAF4119EDDD}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+    <Files>
+      <File FileName="entrypoint.sh" Line="4" Column="48" />
+      <File FileName="Dockerfile" Line="6" Column="12" />
+      <File FileName="docker-compose.yml" Line="6" Column="25" />
+      <File FileName="Startup.cs" Line="12" Column="18" />
+      <File FileName="Data/ApplicationDbContext.cs" Line="13" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.app PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
