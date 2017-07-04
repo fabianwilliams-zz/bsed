@@ -11,18 +11,18 @@ namespace app.Controllers
 	[Route("api/[controller]")]
     public class SpeakerEvalController : Controller
     {
-		private readonly iSpeakerEvalsRepository repository;
+		private readonly iSpeakerEvalsRepository _repository;
 
 		public SpeakerEvalController (iSpeakerEvalsRepository repository)
 		{
-		    this.repository = repository;
+		    _repository = repository;
 		}
 
 		// GET api/values
 		[HttpGet]
 		public IActionResult Get()
 		{
-			return Ok(repository.GetAll());
+			return Ok(_repository.GetAll().ToList());
 		}
 
 	}

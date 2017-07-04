@@ -40,6 +40,8 @@ namespace app
 			services.AddDbContext<ApplicationDbContext>(
 				options => options.UseSqlServer(connection));
 
+            services.AddScoped<iSpeakerEvalsRepository, SpeakerEvalsRepository>();
+
 			//services.AddIdentity<ApplicationUser, IdentityRole>()
 				//.AddEntityFrameworkStores<ApplicationDbContext>()
 				//.AddDefaultTokenProviders();
@@ -55,10 +57,14 @@ namespace app
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory,
+                             ApplicationDbContext evalDataContext)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+			//uses to seed the SQLCore Database in the Docker Container
+			evalDataContext.EnsureSeedDataForContext();
 
             app.UseMvc();
         }
