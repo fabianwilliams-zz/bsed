@@ -42,18 +42,9 @@ namespace app
 
             services.AddScoped<iSpeakerEvalsRepository, SpeakerEvalsRepository>();
 
-			//services.AddIdentity<ApplicationUser, IdentityRole>()
-				//.AddEntityFrameworkStores<ApplicationDbContext>()
-				//.AddDefaultTokenProviders();
 
 			services.AddMvc();
 
-			// Add application services.
-			//services.AddTransient<IEmailSender, AuthMessageSender>();
-			//services.AddTransient<ISmsSender, AuthMessageSender>();
-
-            // Add framework services.
-            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

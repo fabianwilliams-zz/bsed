@@ -47,7 +47,9 @@ namespace app.Controllers
 
 			var entity = await _repository.AddAsync(model);
 
-			return CreatedAtRoute(nameof(Get), entity.Id, entity);
+            //return CreatedAtRoute(nameof(Get), entity.Id, entity);
+            return StatusCode(201);
+            //return new CreatedResult();
 		}
 
 		// PUT api/speakereval/3
