@@ -11,8 +11,8 @@ We will work from the least effort to the most effort, in doing that we will sti
 ### Use my custom image in Docker Hub to spin up the solution
 Do the following:
 - Create a Directory where you want your solution to live
-- In that directory create a file called "docker-compose.yml"
-- Copy the folloing into the file:
+- Go into that directory create a file called "docker-compose.yml"
+- Copy the following into the file:
 
 ```
     version: "3"
@@ -41,7 +41,7 @@ You can now access the Dockerized app at: [http://localhost:8000](http://localho
 
 ### Clone my Repo here and build your own solution
 
-This solution is by far the simpliest and just requrires you to do the following 
+This solution will make a clone of what I have here in Github, and will result in you having your own solution. 
 Run the following:
 
 ```
