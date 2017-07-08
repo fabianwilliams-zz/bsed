@@ -56,7 +56,7 @@ One thing to note about this solution that is quite important is the YML file th
 
 ![](https://i0.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image_thumb-19.png)
 
-this one uses whats inside the DockerFile above. which takes the base image of aspnetcore and layers it with this Web.API solution. The docker file looks like:
+this one uses whats inside the DockerFile below. which takes the base image of aspnetcore and layers it with this Web.API solution. The docker file looks like:
 
 ![](https://i2.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image-17.png)
 
