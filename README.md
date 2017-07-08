@@ -54,6 +54,8 @@ You can now access the Dockerized app at: [http://localhost:8000](http://localho
 
 One thing to note about this solution that is quite important is the YML file that you see above has one line that is swapped out. the line that has the image in there would be gone and in its place would be 
 ![](https://i0.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image_thumb-19.png)
+this one uses whats inside the DockerFile above. which takes the base image of aspnetcore and layers it with this Web.API solution. The docker file looks like:
+![](https://i2.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image-17.png)
 
 
 
