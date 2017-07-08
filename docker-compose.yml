@@ -2,7 +2,6 @@ version: "3"
 services:
     web:
         image: "fabianwilliams/fabsevalswebapi"
-        build: .
         ports:
             - "8000:80"
         depends_on:
