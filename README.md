@@ -60,5 +60,38 @@ this one uses whats inside the DockerFile below. which takes the base image of a
 
 ![](https://i2.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image-17.png)
 
+## Running petclinic using Docker Swarm
 
+I've now added the capability to put my solution in Swarm Mode!!! You will need to modify my Docker Compose File a bit to add the DEPLOY section.  In this case we are adding 2 Replicas ONLY for the WEB service which means it will run as in my case on 2 Nodes since i have more than 1 Ubuntu VM stood up. But you can still get multiple container replicas even if you have 1 Node, it just would mean you would have multiple replicas on 1 node.
+
+```
+version: "3"
+services:
+    web:
+        image: "fabianwilliams/fabsevalswebapi"
+        build: .
+        deploy:
+            replicas: 2
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "8000:80"
+        depends_on:
+            - db
+    db:
+        image: "microsoft/mssql-server-linux"
+        ports:
+            - "1433:1433"
+        environment:
+            SA_PASSWORD: "P@ssword1!"
+            ACCEPT_EULA: "Y"
+```
+
+Make sure you are running in swarm mode (`docker swarm init`). You can then run the following to deploy the containers to Docker Swarm with:
+
+```
+	docker stack deploy -c docker-compose.yml FabsEvals
+```
+
+Thank you all. I hope you have as much fun as I did makeing this. 
 
