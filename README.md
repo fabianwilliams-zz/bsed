@@ -60,7 +60,7 @@ this one uses whats inside the DockerFile below. which takes the base image of a
 
 ![](https://i2.wp.com/www.fabiangwilliams.com/wp-content/uploads/2017/07/image-17.png)
 
-## Running petclinic using Docker Swarm
+## Running my Fabian Evals Docker Solution using Docker Swarm
 
 I've now added the capability to put my solution in Swarm Mode!!! You will need to modify my Docker Compose File a bit to add the DEPLOY section.  In this case we are adding 2 Replicas ONLY for the WEB service which means it will run as in my case on 2 Nodes since i have more than 1 Ubuntu VM stood up. But you can still get multiple container replicas even if you have 1 Node, it just would mean you would have multiple replicas on 1 node.
 
